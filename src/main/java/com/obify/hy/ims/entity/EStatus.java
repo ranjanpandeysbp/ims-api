@@ -1,6 +1,6 @@
 package com.obify.hy.ims.entity;
 
-public enum ELoanStatus {
+public enum EStatus {
     APPROVED,
     REJECTED,
     PENDING,

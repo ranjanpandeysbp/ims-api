@@ -7,20 +7,21 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "loan_application")
-public class LoanApplication {
+@Document(collection = "sales")
+public class Sales {
     @Id
     private String id;
+    private Integer quantity;
+    private String productId;
     private String merchantId;
-    private Double loanAmountRequested;
-    private EStatus eLoanStatus;
-    private List<String> comments;
+    private String buyerName;
+    private String buyerAddress;
+    private String buyerEmail;
+    private String buyerPhone;
     private LocalDateTime createdDateTime;
     private LocalDateTime updatedDateTime;
-    private ECurrency currency;
 }

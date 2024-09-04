@@ -24,6 +24,7 @@ public class UserDTO {
     private String firstName;
     private String lastName;
     private Set<String> roles;
+    private String phone;
     
     @NotBlank
     @Size(min = 6, max = 40)

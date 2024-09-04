@@ -12,15 +12,16 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "loan_application")
-public class LoanApplication {
+@Document(collection = "invoices")
+public class Invoice {
     @Id
     private String id;
-    private String merchantId;
-    private Double loanAmountRequested;
-    private EStatus eLoanStatus;
-    private List<String> comments;
+    private String name;
+    private String description;
+    private List<String> sales;
+    private Double invoiceAmount;
+    private EStatus status;
+    private ECurrency currency;
     private LocalDateTime createdDateTime;
     private LocalDateTime updatedDateTime;
-    private ECurrency currency;
 }
