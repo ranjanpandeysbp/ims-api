@@ -63,6 +63,7 @@ public class ProductServiceImpl implements ImsService<ProductDTO, ProductDTO> {
                 });
         ProductDTO productDTO = new ProductDTO();
         BeanUtils.copyProperties(product, productDTO);
+        productDTO.setProductId(product.getId());
         return productDTO;
     }
 
@@ -74,6 +75,7 @@ public class ProductServiceImpl implements ImsService<ProductDTO, ProductDTO> {
         for(Product product: products){
             productDTO = new ProductDTO();
             BeanUtils.copyProperties(product, productDTO);;
+            productDTO.setProductId(product.getId());
             dtos.add(productDTO);
         }
         return dtos;
@@ -92,6 +94,7 @@ public class ProductServiceImpl implements ImsService<ProductDTO, ProductDTO> {
         for(Product product: products){
             productDTO = new ProductDTO();
             BeanUtils.copyProperties(product, productDTO);;
+            productDTO.setProductId(product.getId());
             dtos.add(productDTO);
         }
         return dtos;

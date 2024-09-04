@@ -4,5 +4,6 @@ public enum ERole {
   ROLE_MANAGER,
   ROLE_VENDOR,
   ROLE_MERCHANT,
-  ROLE_ADMIN
+  ROLE_ADMIN,
+  ROLE_LENDER
 }
