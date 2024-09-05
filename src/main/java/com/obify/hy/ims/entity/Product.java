@@ -20,9 +20,7 @@ public class Product {
     private Double price;
     private Integer quantity;
     private String categoryId;
-    private String managerId;
-    private List<String> locations;
-    private String vendorId;
+    private String merchantId;
     private LocalDateTime createdDateTime;
     private LocalDateTime updatedDateTime;
     private ECurrency currency;
